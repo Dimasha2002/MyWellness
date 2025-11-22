@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Drop shadow -->
+    <item android:top="4dp" android:left="4dp">
+        <shape>
+            <corners android:topLeftRadius="30dp" android:topRightRadius="30dp" 
+                     android:bottomLeftRadius="30dp" android:bottomRightRadius="0dp" />
+            <solid android:color="#20000000" />
+        </shape>
+    </item>
+    
+    <!-- Main water drop -->
+    <item android:bottom="4dp" android:right="4dp">
+        <shape>
+            <corners android:topLeftRadius="28dp" android:topRightRadius="28dp" 
+                     android:bottomLeftRadius="28dp" android:bottomRightRadius="0dp" />
+            <gradient
+                android:startColor="#03A9F4"
+                android:centerColor="#29B6F6"
+                android:endColor="#4FC3F7"
+                android:type="radial"
+                android:gradientRadius="35dp" />
+        </shape>
+    </item>
+    
+    <!-- Inner gradient highlight -->
+    <item android:top="8dp" android:left="8dp" android:right="20dp" android:bottom="20dp">
+        <shape>
+            <corners android:topLeftRadius="22dp" android:topRightRadius="22dp" 
+                     android:bottomLeftRadius="22dp" android:bottomRightRadius="0dp" />
+            <gradient
+                android:startColor="#80FFFFFF"
+                android:centerColor="#40FFFFFF" 
+                android:endColor="#00FFFFFF"
+                android:type="radial"
+                android:gradientRadius="25dp" />
+        </shape>
+    </item>
+    
+    <!-- Top highlight -->
+    <item android:top="6dp" android:left="12dp" android:right="30dp" android:bottom="40dp">
+        <shape android:shape="oval">
+            <solid android:color="#60FFFFFF" />
+        </shape>
+    </item>
+    
+    <!-- Small reflection -->
+    <item android:top="15dp" android:left="18dp" android:right="35dp" android:bottom="35dp">
+        <shape android:shape="oval">
+            <solid android:color="#80FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

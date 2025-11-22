@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Notification Permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyWellness">
+        <!-- Launch Activity - First screen shown when app starts -->
+        <activity
+            android:name=".LaunchActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyWellness">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Onboarding Activities -->
+        <activity
+            android:name=".Onboarding1Activity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <activity
+            android:name=".Onboarding2Activity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <activity
+            android:name=".Onboarding3Activity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <activity
+            android:name=".SignInSignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- Home Activity - The main app screen -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- Habit Activity - Daily habits tracking -->
+        <activity
+            android:name=".HabitActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- Mood Activity - Mood tracking and selection -->
+        <activity
+            android:name=".MoodActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- Profile Activity - User profile and settings -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- Add New Habit Activity - Form for creating new habits -->
+        <activity
+            android:name=".AddNewHabitActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- Profile Section Activities -->
+        <!-- Account Settings Activity - User account management -->
+        <activity
+            android:name=".AccountSettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- Notification Settings Activity - Notification preferences -->
+        <activity
+            android:name=".NotificationSettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- Notification List Activity - View all reminder messages -->
+        <activity
+            android:name=".NotificationListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- Goals Settings Activity - Goal tracking and management -->
+        <activity
+            android:name=".GoalsSettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- Privacy Settings Activity - Privacy and security controls -->
+        <activity
+            android:name=".PrivacySettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyWellness" />
+
+        <!-- About Activity - App information and support -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" 
+            android:theme="@style/Theme.MyWellness" />
+    </application>
+
+</manifest>

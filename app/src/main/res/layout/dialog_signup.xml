@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="460dp"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@drawable/modern_gradient_background"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Name"
+        android:background="@drawable/rounded_white_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Email"
+        android:background="@drawable/rounded_white_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Password"
+        android:background="@drawable/rounded_white_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Confirm password"
+        android:background="@drawable/rounded_white_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDialogSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Create Account"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="@drawable/primary_button_background"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Continue with Google"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:background="@drawable/rounded_white_bg"
+        android:drawableStart="@drawable/google_icon"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical|start"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Continue with Facebook"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:background="@drawable/rounded_white_bg"
+        android:drawableStart="@drawable/facebook_icon"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical|start"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+</LinearLayout>

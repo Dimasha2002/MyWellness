@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6E6F0">
+
+    <!-- Main ScrollView Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Profile Header -->
+            <include layout="@layout/profile_header" />
+
+            <!-- Settings Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#2C2C54"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Account Settings -->
+            <include layout="@layout/profile_account_settings" />
+
+            <!-- Notifications -->
+            <include layout="@layout/profile_notifications" />
+
+            <!-- Goals -->
+            <include layout="@layout/profile_goals" />
+
+            <!-- Privacy -->
+            <include layout="@layout/profile_privacy" />
+
+            <!-- About -->
+            <include layout="@layout/profile_about" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- Home Tab -->
+        <LinearLayout
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏠"
+                android:textSize="24sp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/nav_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="11sp"
+                android:textColor="#9CA3AF" />
+        </LinearLayout>
+
+        <!-- Habits Tab -->
+        <LinearLayout
+            android:id="@+id/nav_habits"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅"
+                android:textSize="24sp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/nav_habits_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habits"
+                android:textSize="11sp"
+                android:textColor="#9CA3AF" />
+        </LinearLayout>
+
+        <!-- Mood Tab -->
+        <LinearLayout
+            android:id="@+id/nav_mood"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="😊"
+                android:textSize="24sp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/nav_mood_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mood"
+                android:textSize="11sp"
+                android:textColor="#9CA3AF" />
+        </LinearLayout>
+
+        <!-- Profile Tab (Active) -->
+        <LinearLayout
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👤"
+                android:textSize="24sp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/nav_profile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="11sp"
+                android:textColor="#F59E0B"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

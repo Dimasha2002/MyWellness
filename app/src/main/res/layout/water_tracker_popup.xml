@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/water_popup_background"
+    android:gravity="center">
+
+    <!-- Large Water Drop Icon -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp">
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/large_water_drop" />
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="💧"
+            android:textSize="32sp" />
+    </FrameLayout>
+
+    <!-- Progress Text -->
+    <TextView
+        android:id="@+id/waterProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6/8"
+        android:textColor="#1F2937"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glasses today"
+        android:textColor="#6B7280"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Water Glasses Grid -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <!-- First Row of Glasses -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <FrameLayout
+                android:id="@+id/glass1"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/filled_glass_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="💧"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/glass2"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/filled_glass_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="💧"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/glass3"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/filled_glass_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="💧"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/glass4"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/filled_glass_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="💧"
+                    android:textSize="18sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Second Row of Glasses -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/glass5"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/filled_glass_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="💧"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/glass6"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/filled_glass_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="💧"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/glass7"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/empty_glass_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="💧"
+                    android:textSize="18sp"
+                    android:alpha="0.4" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/glass8"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/empty_glass_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="💧"
+                    android:textSize="18sp"
+                    android:alpha="0.4" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Add Glass Button -->
+    <Button
+        android:id="@+id/addGlassButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/add_glass_button_bg"
+        android:text="+ Add Glass"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:elevation="2dp" />
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/close_button_bg"
+        android:text="Close"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

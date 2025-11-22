@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="280dp"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@drawable/modern_gradient_background"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/editLoginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="User Name"
+        android:background="@drawable/rounded_white_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Password Field with Visibility Toggle -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_white_bg"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/editLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:background="@android:color/transparent"
+            android:paddingLeft="16dp"
+            android:paddingRight="48dp"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/togglePasswordVisibility"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:src="@android:drawable/ic_partial_secure"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:tint="#6C5CE7"
+            android:contentDescription="Toggle password visibility" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDialogLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="LOGIN"
+        android:textColor="#6C5CE7"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_white_button"
+        android:textStyle="bold"
+        android:elevation="2dp"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+</LinearLayout>

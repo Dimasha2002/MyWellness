@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/purple_gradient_background"
+    android:padding="40dp">
+
+    <!-- Icon Container -->
+    <FrameLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/circle_white_background">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/goal_foreground"
+            android:contentDescription="Goal Target Icon" />
+
+    </FrameLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Achieve Your Goals"
+        android:textColor="#4A4A4A"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Build healthy habits and see your progress with beautiful charts and insights"
+        android:textColor="#777777"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="80dp" />
+
+    <!-- Get Started Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetStarted"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:background="@drawable/get_started_button_background"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Get Started"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

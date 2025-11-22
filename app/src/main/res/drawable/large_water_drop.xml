@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Water drop shadow -->
+    <item android:top="4dp" android:left="4dp">
+        <shape android:shape="oval">
+            <solid android:color="#20000000" />
+        </shape>
+    </item>
+    
+    <!-- Main water drop -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#3B82F6"
+                android:centerColor="#60A5FA"
+                android:endColor="#93C5FD"
+                android:type="radial"
+                android:gradientRadius="60dp" />
+        </shape>
+    </item>
+    
+    <!-- Highlight -->
+    <item android:top="10dp" android:left="15dp" android:right="40dp" android:bottom="40dp">
+        <shape android:shape="oval">
+            <solid android:color="#80FFFFFF" />
+        </shape>
+    </item>
+</layer-list>
